@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DrunkenCircles</title>
+</head>
+<body>
+    <canvas width="800" height="800"></canvas>
+
+    <script src="circles.js"></script>
+    <script>
+        var canvas = document.getElementsByTagName("canvas")[0];
+        new Circles.Game(800, 800, 200).start(canvas);
+    </script>
+</body>
+</html>
