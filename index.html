@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>DrunkenCircles</title>
+    <title>Molecules Simulator</title>
 </head>
 <body>
-    <canvas width="800" height="800"></canvas>
+    <canvas width="800" height="400"></canvas>
+    <script src="inherit.js"></script>
+    <script src="movingMolecule.js"></script>
+    <script src="cell.js"></script>
+    <script src="molecule.js"></script>
+    <script src="sim.js"></script>
 
-    <script src="circles.js"></script>
     <script>
         var canvas = document.getElementsByTagName("canvas")[0];
-        new Circles.Game(800, 800, 200).start(canvas);
+        new MoleculesSim.Simulator(canvas).start();
     </script>
 </body>
 </html>
